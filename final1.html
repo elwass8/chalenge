@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+    <headn >
+        <title>NexTechSquad
+        </title>
+        
+        <style>
+            
+           
+          .header{
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                height: 80px;
+                background-color:rgb(0, 3, 12);
+                border: solid;
+                border-width: 1px;
+                border-color: black;
+                display: flex;
+                flex-direction: row;
+
+            }
+           
+        
+            .left{
+                width: 320px ;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                flex-shrink: 0;
+                margin-left: 150px;
+                
+            }
+            .squadlogo{
+                height: 60px;
+                vertical-align: middle;
+                margin-top: 6px;
+                cursor: pointer;
+                margin-left: 100px;
+            }
+            
+            .center{
+                flex: 1 ;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-left: 8%;
+                flex-shrink: 0;
+
+            }
+            .insta,.face,.link,.x,.telegram{
+                height: 50px;
+                background-color: rgb(148, 28, 28);
+                border-radius: 16px;
+                cursor: pointer;
+                margin-right: 50px;
+                padding: 3px;
+            }
+            .link{
+                border-radius: 16px;
+            }
+          
+            
+            .right{
+                width: 600px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-right: 100px;
+                flex-shrink: 0;
+            }
+            .who,.up,.log{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                cursor: pointer;
+                color: rgb(179, 177, 177);
+                margin-right: 20px;
+            }
+            .up{
+                margin-right: 20px;
+            }
+            .loop{
+                height: 30px;
+                margin-right: -10px;
+                cursor: pointer;  
+                background-color: brown;
+                border-radius: 5px;
+                padding: 5px;
+            }
+            .hero{
+                padding-top:10px ;
+                background-image:url('icons/5fa5ffe1-3faa-42f7-af86-355db673818a.jpg')  ;
+                background-size: cover;
+                height: 800px;
+                display: flex;
+                border: solid;
+                border-width: 1px;
+                justify-content: center;
+                margin-bottom: 50px;
+            }
+            .herocaption{
+                color: rgb(239, 54, 54);
+                margin-top: 70px;
+                font-size: 70px;
+                font-family: Arial, Helvetica, sans-serif;
+                display: inline-block;
+                width: 200px;
+                height: 50px;
+                margin-left: 60px;
+            }    
+            .quote{
+                color: white;
+                margin-top:235px ;
+                margin-left:120px ;
+                display: inline-block;
+                width: 500px;
+                height: 50px;
+            }
+            .welcomeing{
+                color: lightblue;
+                font-weight: bold;
+                margin-top: 320px;
+                display: inline-block;
+                width: 700px;
+                height: 100px;
+                margin-right: 20px;
+            }
+            .join{
+                margin-right: 400px;
+                margin-top: 590px;
+                padding: 30px;
+                font-size: 20px;
+                font-weight: bold;
+                background-color:rgb(148, 28, 28) ;
+                color: white;
+                border-radius: 10px;
+                width: 150px;
+            }
+            .join:hover{
+                opacity: 0.7;
+            }
+            .join:active{
+                opacity: 0.4;
+            }
+            .about{
+                background-color: gray;
+                width: 900px;
+                margin-left:25% ;
+                padding: 30px;
+                border-radius: 20px;
+            }
+            .titre{
+                margin-left:330px;
+                color: rgb(178, 36, 36);
+            }
+            .rouge{
+                color:rgb(178, 36, 36) ;
+                font-weight: bold;
+            }
+            .lhadra{
+                font-size: 30px;
+            }
+            .register{
+                padding: 30px;
+                font-size: 20px;
+                font-weight: bold;
+                background-color:rgb(148, 28, 28) ;
+                color: white;
+                border-radius: 10px;
+                margin-left:290px;
+            }
+            .register:hover{
+                opacity: 0.7;
+            }
+            .register:active{
+                opacity: 0.4;
+            }
+            .activities{
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                height: 700px;
+                border-width: 1px;
+                border-style: solid;
+                border-color: gray;
+                margin: 0;
+                margin-top: 50px;
+                padding: 10px;
+                padding-top: 100px;
+                background-color: rgb(178, 36, 36);
+                
+            }
+            .activity1{
+                width: 33.33%;
+            }
+            .ac1{
+               
+                height: 85%;
+            }
+            .activity2{
+                
+                width: 33.33%;
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+            .activity3{
+                width: 33.33%;
+            }
+            .chess,.time,.open{
+                margin-left: 20%;
+                font-size: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                font-weight: bold;
+            }
+            .open{
+                margin-left: 39%;
+            }
+            .time{
+                margin-left: 39%;
+            }
+            .titre2{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 70px;
+                font-weight: bold;
+                margin-left: 30%;
+                color: brown;
+               
+            }
+            .us{
+                margin-top: 80px;
+            }
+            .footer{
+                display:flex;
+                flex-direction: row;
+                border: solid;
+                border-width: 1px;
+                border-color: gray;
+                padding-bottom: 50px;
+                background-color: rgb(0, 3, 12);
+                margin: 0;
+                margin-top:25px ;
+                padding-top: 100px;
+                padding-bottom: 200px;
+            }
+            .us,.us1{
+                margin-top: 50px;
+            }
+            .squadlogo2{
+                height: 140px;
+                margin-left: 120px;
+                margin-top: 85px;
+            }
+            .nts2{
+                margin-top: 135px;
+                margin-left: 10px;
+                font-size: 20px;
+                font-weight: bold;
+                color: rgb(225, 51, 51);
+            }
+            .bluelink{
+                margin-left: 40px;
+                font-size: 20px;
+                margin-top: 130px;
+                color: rgb(0, 78, 223);
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            .support0{
+                margin-left: 500px;
+                margin-top: 110px; 
+            }
+            .sup{
+                font-size: 25px;
+                color: white;
+            }
+            .h{
+                margin-bottom: 30px;
+                color: white;
+                cursor: pointer;
+            }
+            .support1{
+                margin-left: 70px;
+                color: white;
+                margin-top: 110px; 
+            }
+            .sup1{
+                font-size: 25px; 
+                color: white;
+            }
+            .a{
+                margin-bottom: 30px;
+                color: white;
+                cursor: pointer;
+            }
+            .contact{
+                display: flex;
+                align-items: start;
+                vertical-align: top;
+            }
+            .cont{
+                color: white;
+                font-size: 50px;
+                margin-left:  20px;
+            }
+            
+            
+            
+            
+       
+            
+            
+           
+            
+            
+           
+           
+            
+        </style>
+    </head>
+    <body style="
+                padding-top: 100px;
+                background-color: rgb(0, 3, 12);
+                ">
+        <div class="header">
+            <div class="left" >
+                <img class="squadlogo" src="icons/Asset 21.png">
+                
+            </div>
+            <div class="center">
+                <img class="insta" src="icons/instagram.png">
+                <img class="face" src="icons/facebook.png">
+                <img class="link" src="icons/business.png">
+                <img class="x" src="icons/twitter.png">
+                <img class="telegram" src="icons/telegram.png">
+            </div>
+            <div class="right" >
+                <p class="who">Who are NextTechSquad ↓</p>
+                <p class="up">what's comming ↓</p>
+                <img class="loop" src="icons/search.svg">
+                <p class="log">Log in ↓</p>
+            </div>
+        </div>
+        <div class="hero" >
+            
+            <h1 class="herocaption">NexTechSquad</h1>
+            <h1 class="quote">THINK . SOLVE . CODE</h1>
+            <h1 class="welcomeing">A community of developers, researchers,and tech enthusiasts shaping the future through cutting-edge projects.</h1>
+            <div class="buttons">
+                <button class="join">Join us</button>
+            </div>
+        </div>
+        <div class="about">
+                <div>
+                    <h1 class="titre">About us</h1>
+                </div>
+
+                <div>
+                <p class="lhadra">Welcome to <span class="rouge">NextTechSquad</span>, a dynamic scientific club at University Abdelhamid Mehri - Constantine 2, dedicated to exploring the exciting world of coding and cutting-edge technologies within the New Technologies of Information and Communication (NTIC) department. Our club brings together passionate students who are eager to delve into the latest advancements in fields like Artificial Intelligence, Web and Mobile Development, Cybersecurity, IoT, and Data Science. Through hands-on workshops, hackathons, and collaborative projects, we aim to bridge the gap between academic knowledge and real-world applications, empowering members with the skills and insights needed to thrive in the fast-evolving tech landscape. Whether you're a beginner or an experienced coder, our community offers a supportive environment to learn, innovate, and connect with industry experts and like-minded peers. Join us as we push the boundaries of technology and shape the future, one line of code at a time.</p>
+                </div>
+                <div class="buttons">
+                <button class="register">Register from here</button>
+                </div>
+        </div>
+        <p class="titre2">Avtivities and events:</p>
+        <div class="activities">
+            
+            <div class="activity1">
+                <img class="ac1" src="icons/Screenshot 2025-07-17 020842.jpg">
+                <p class="chess">Our chess workshop</p>
+            </div>
+            <div class="activity2">
+                <img class="ac1" src="icons/Screenshot 2025-07-17 020913.jpg">
+                <p class="time">2023 events</p>
+            </div>
+            <div class="activity3">
+                <img class="ac1" src="icons/Screenshot 2025-07-17 021018.jpg">
+                <p class="open">Open day</p>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="contact">
+                <p class="cont">contact us:</p>
+            </div>    
+                <div class="us">
+                <img class="squadlogo2" src="icons/Asset 21.png">
+                </div>
+                <div class="us1">
+                <p class="nts2">NexTechSquad</p>
+                </div>
+                <div class="contact0">
+                    <p class="bluelink">Gmail:NexTechSquad@gmail.com</p>
+                    <p class="bluelink">location </p>
+                </div>
+                <div class="support0">
+                    <p class="sup">Website</p>
+                    <p class="h">Home</p>
+                    <p class="h">Information</p>
+                    <p class="h">FAQ</p>
+
+                </div>
+                <div class="support1">
+                    <p class="sup1">Support</p>
+                    <p class="a">Help</p>
+                    <p class="a">Terms and conditions</p>
+                </div>
+            
+        </div>
+       
+
+    </body>
+</html>
